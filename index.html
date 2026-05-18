@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wesley Roberto - Desenvolvedor de Sistemas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+            color: #e6edf3;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #30363d;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: #58a6ff;
+        }
+
+        header p {
+            color: #8b949e;
+            margin-top: 5px;
+            font-size: 0.9rem;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .profile-section {
+            background: #161b22;
+            padding: 40px 30px;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            margin-bottom: 30px;
+        }
+
+        .profile-avatar {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #58a6ff, #79c0ff);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            border: 3px solid #238636;
+        }
+
+        .profile-name {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #58a6ff;
+            margin-bottom: 10px;
+        }
+
+        .profile-role {
+            font-size: 1.2rem;
+            color: #79c0ff;
+            margin-bottom: 5px;
+        }
+
+        .profile-school {
+            color: #8b949e;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .about-section {
+            background: #161b22;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .about-section h2 {
+            color: #58a6ff;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+
+        .about-section p {
+            color: #c9d1d9;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .social-section {
+            background: #161b22;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #30363d;
+            margin-bottom: 30px;
+        }
+
+        .social-section h3 {
+            color: #58a6ff;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 15px;
+            background: #0d1117;
+            border-radius: 8px;
+            border: 1px solid #30363d;
+            text-decoration: none;
+            color: #79c0ff;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .social-link:hover {
+            background: #1f2937;
+            border-color: #58a6ff;
+            transform: translateX(5px);
+            color: #58a6ff;
+        }
+
+        .social-link-icon {
+            margin-right: 15px;
+            font-size: 1.3rem;
+            width: 30px;
+            text-align: center;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 32px;
+            background: #238636;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .cta-button:hover {
+            background: #2ea043;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(46, 160, 67, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 20px 15px;
+            }
+
+            .profile-section {
+                padding: 30px 20px;
+            }
+
+            .profile-name {
+                font-size: 1.5rem;
+            }
+
+            .profile-role {
+                font-size: 1rem;
+            }
+
+            .about-section,
+            .social-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Wesley Roberto</h1>
+    <p>Desenvolvedor de Sistemas | Portfólio Profissional</p>
+</header>
+
+<main>
+    <div class="container">
+        <!-- Seção de Perfil -->
+        <div class="profile-section">
+            <div class="profile-avatar">💻</div>
+            <div class="profile-name">Wesley Roberto</div>
+            <div class="profile-role">Técnico em Desenvolvimento de Sistemas</div>
+            <div class="profile-school">
+                Colégio Estadual Unidade Polo Arapongas<br>
+                Curso Técnico em Desenvolvimento de Sistemas
+            </div>
+            <a href="https://lightning133.github.io/repositorio/" class="cta-button">Ver Portfólio Completo</a>
+        </div>
+
+        <!-- Seção Sobre Mim -->
+        <div class="about-section">
+            <h2>Sobre Mim</h2>
+            <p>
+                Sou um desenvolvedor apaixonado por tecnologia em formação no curso Técnico em Desenvolvimento de Sistemas. 
+                Tenho experiência com backend, frontend, programação mobile e desenvolvimento de jogos. 
+                Estou sempre buscando aprender novas tecnologias e evoluir como profissional.
+            </p>
+        </div>
+
+        <!-- Seção Conecte-se Comigo -->
+        <div class="social-section">
+            <h3>Conecte-se Comigo</h3>
+            <div class="social-links">
+                <a href="https://instagram.com/weslxy_ts0" class="social-link" target="_blank">
+                    <span class="social-link-icon">📱</span>
+                    <span>Instagram: @weslxy_ts0</span>
+                </a>
+                <a href="https://www.linkedin.com/in/wesley-roberto-04ab2b40b" class="social-link" target="_blank">
+                    <span class="social-link-icon">💼</span>
+                    <span>LinkedIn: wesley-roberto-04ab2b40b</span>
+                </a>
+                <a href="https://lightning133.github.io/repositorio/" class="social-link" target="_blank">
+                    <span class="social-link-icon">🎯</span>
+                    <span>Portfólio GitHub Pages</span>
+                </a>
+                <a href="https://github.com/lightning133" class="social-link" target="_blank">
+                    <span class="social-link-icon">🔗</span>
+                    <span>GitHub: lightning133</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    © 2026 - Wesley Roberto | Desenvolvedor de Sistemas
+</footer>
+
+</body>
+
+</html>
